@@ -1,7 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+
 }
+
+
+/*----------  NAV-BAR  ----------  NAV-BAR  ----------*/
+
 a{
     color:#fff;
     text-decoration: none;
@@ -13,7 +18,7 @@ a:hover{
 .logo{
     font-size: 30px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 4px;   
 }
 nav{
     display: flex;
@@ -30,11 +35,16 @@ nav{
 }
 .nav_list li{
     letter-spacing: 3px;
-    margin-left: 100px;
+    margin-left: 70px;
     font-size: 23px; 
 }
 
+/*----------  NAV-BAR  ----------  NAV-BAR  ----------*/
 
+
+
+
+/*----------  CONTEUDO  ----------  CONTEUDO  ----------*/
 
 .container-conteudo {
     display: flex;
@@ -67,8 +77,12 @@ nav{
     font-size: 24px;
 }
 
+/*----------  CONTEUDO  ----------  CONTEUDO  ----------*/
 
 
+
+
+/*----------  CONTEUDO-01  ----------  CONTEUDO-01  ----------*/
 .container-conteudo01{
     display: flex;
     flex-direction:row;
@@ -101,7 +115,11 @@ nav{
     font-size: 24px;
 }
 
+/*----------  CONTEUDO-01  ----------  CONTEUDO-01  ----------*/
 
+
+
+/*----------  BOTAO  ----------  BOTAO  ----------*/
 
 .btn{
     padding: 10px 8px;
@@ -131,42 +149,17 @@ nav{
 
 }
 
-.bloco2{
-    border: 0px solid black;
-    border-radius: 40px;
-    height: 239px;
-    width: 355px;
-    background-color: #F5F5F5;
-    text-align: center;
-
+.bloco1:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.bloco3{
-    border: 0px solid black;
-    border-radius: 40px;
-    height: 239px;
-    width: 355px;
-    background-color: #F5F5F5;
-    text-align: center;
 
-}
-.bloco4{
-    border: 0px solid black;
-    border-radius: 40px;
-    height: 239px;
-    width: 355px;
-    background-color: #F5F5F5;
-    text-align: center;
+/*----------  BOTAO  ----------  BOTAO  ----------*/
 
-}
-.bloco5{
-    border: 0px solid black;
-    border-radius: 40px;
-    height: 239px;
-    width: 355px;
-    background-color: #F5F5F5;
-    text-align: center;
 
-}
+
+
+/*----------  CONTEUDO-02  ----------  CONTEUDO-02  ----------*/
+
 .container{
     border: 1px solid black;
     display: flex;
@@ -214,18 +207,45 @@ h1{
     margin: 200px;
     margin-bottom: 300px;
 }
-.bloco1 > img {
-    padding-top: 40px;
-    padding-bottom: 20px;
+
+/*----------  CONTEUDO-02  ----------  CONTEUDO-02  ----------*/
+
+
+    
+
+/*----------  footer  ----------  footer  ----------*/
+
+footer{
+    background-color:#F5F5F5;
+    border-top: solid 1px black;
+    border-radius: 5px 5px 0px 0px;
+    padding: 100px;
 }
-h1{
-    font-family:"DM Serif Text", serif;
-    font-size: 45px;
+
+.creditos{
+    display: flex;    
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family:'Poppins',sans-serif ;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-empresa{
+    font-family:'Poppins',sans-serif ;
+    font-size: 30px;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    text-align: center;
-    color: #1D1D1D;
-    padding-top: 0px;
 }
+
+.icones{
+    display: flex;
+    gap: 20px;
+}
+
+/*----------  footer  ----------  footer  ----------*/
+
+
+
 
 @media(max-width: 2100px){
     .container-conteudo{
@@ -243,8 +263,14 @@ h1{
     .container1{
         flex-wrap: wrap;
     }
-
-
-.container{
+   .container{
     flex-wrap: wrap;
+    }
+
+}
+
+@media(max-width:1200px){
+    .nav_list{
+        display: none;
+    }
 }
