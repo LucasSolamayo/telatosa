@@ -22,12 +22,13 @@ a:hover{
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-family:"Poppins", sans-serif;
     background-color: #505069;
     height: 8vh;
     margin-bottom: 210px;
+    padding: 28px 8%;
 }
 .nav_list{
     list-style: none;
@@ -246,6 +247,33 @@ footer{
 
 
 
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 990px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: black;
+    height: 50px;
+}
+#searchInput{
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-family:"DM Serif Text", serif;
+    font-size: larger;
+}
+
+.search label{
+    height: 20px;
+}
+
+
 
 @media(max-width: 2100px){
     .container-conteudo{
@@ -269,7 +297,7 @@ footer{
 
 }
 
-@media(max-width:1200px){
+@media(max-width:1700px){
     .nav_list{
         display: none;
     }
